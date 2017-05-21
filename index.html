@@ -7,75 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
-	<script src="js/jquery-1.12.2.min.js"></script>
-	<script src="js/btt.js"></script>	
-	<script src="js/parallax.js"></script>
-	<script src="js/modernizr.custom.63321.js"></script>
-	<script src="js/jquery.catslider.js"></script>
-		<script>
-			$(function() {
-
-				$( '#mi-slider' ).catslider();
-
-			});
-		</script>
-		
-	<script type="text/javascript">
 	
-	$(document).on("scroll",function(){
-		if($(document).scrollTop()> 80){
-			$("header").removeClass("large").addClass("small");
-			} else{
-			$("header").removeClass("small").addClass("large");
-		}
-		
-		if($(document).scrollTop()> 80){
-			$("nav").removeClass("large").addClass("small");
-			} else{
-			$("nav").removeClass("small").addClass("large");
-		}
-		
-		if($(document).scrollTop()> 80){
-			$("div.tri-left").removeClass("large").addClass("small");
-			} else{
-			$("div.tri-left").removeClass("small").addClass("large");		
-		}
-		
-		if($(document).scrollTop()> 80){
-			$("div.tri-right").removeClass("large2").addClass("small2");
-			} else{
-			$("div.tri-right").removeClass("small2").addClass("large2");		
-		}
-		
-	});
-	
-	function customer()
-		{
-			var inputs = /^[a-zA-Z ']+(-[a-zA-Z ']+)*$/ ;
-			var input_num = /^[0-9]+$/;
-
-			var name = document.getElementById("name").value;
-			var cname = name.replace(/ |\u00F1|\u00D1/g, '');
-			var cname_new = inputs.test(cname);
-			if (cname_new == false) {
-				alert("Please check your name input!")
-				return true;
-			}
-			var last = document.getElementById("last").value;
-			var lastn = last.replace(/ |\u00F1|\u00D1/g, '');
-			var lastn_new = inputs.test(lastn);
-			if (lastn_new == false) {
-				alert("Please check your last name input!")
-				return true;
-			}
-			var contact = document.getElementById("contact").value;
-			var num_new = input_num.test(contact);
-			if (num_new == false) {
-				alert("Contact number must contain numbers only!")
-				return true;
-			}
-		}
-	</script>
 <head>
 <body>
 	<div class="tri-left large"></div>
@@ -202,7 +134,75 @@
 	
 	<a href="#0" class="cd-top"></a>
 
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/btt.js"></script>	
+	<script src="js/jquery.catslider.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/modernizr.custom.63321.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+		
+	<script type="text/javascript">
 	
+	$(document).on("scroll",function(){
+		if($(document).scrollTop()> 80){
+			$("header").removeClass("large").addClass("small");
+			} else{
+			$("header").removeClass("small").addClass("large");
+		}
+		
+		if($(document).scrollTop()> 80){
+			$("nav").removeClass("large").addClass("small");
+			} else{
+			$("nav").removeClass("small").addClass("large");
+		}
+		
+		if($(document).scrollTop()> 80){
+			$("div.tri-left").removeClass("large").addClass("small");
+			} else{
+			$("div.tri-left").removeClass("small").addClass("large");		
+		}
+		
+		if($(document).scrollTop()> 80){
+			$("div.tri-right").removeClass("large2").addClass("small2");
+			} else{
+			$("div.tri-right").removeClass("small2").addClass("large2");		
+		}
+		
+	});
+	
+	function customer()
+		{
+			var inputs = /^[a-zA-Z ']+(-[a-zA-Z ']+)*$/ ;
+			var input_num = /^[0-9]+$/;
+
+			var name = document.getElementById("name").value;
+			var cname = name.replace(/ |\u00F1|\u00D1/g, '');
+			var cname_new = inputs.test(cname);
+			if (cname_new == false) {
+				alert("Please check your name input!")
+				return true;
+			}
+			var last = document.getElementById("last").value;
+			var lastn = last.replace(/ |\u00F1|\u00D1/g, '');
+			var lastn_new = inputs.test(lastn);
+			if (lastn_new == false) {
+				alert("Please check your last name input!")
+				return true;
+			}
+			var contact = document.getElementById("contact").value;
+			var num_new = input_num.test(contact);
+			if (num_new == false) {
+				alert("Contact number must contain numbers only!")
+				return true;
+			}
+		}
+	</script>
 </body>
 
 
