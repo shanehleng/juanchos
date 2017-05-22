@@ -1,0 +1,882 @@
+@font-face{
+  font-family: 'Please write me a song';
+  src: url('../fonts/Please write me a song.ttf');
+}
+
+@font-face{
+  font-family: 'Simplifica';
+  src: url('../fonts/SIMPLIFICA Typeface.ttf');
+}
+
+@font-face{
+  font-family: 'Sketch Block';
+  src: url('../fonts/Sketch_Block.ttf');
+}
+
+@font-face{
+  font-family: 'RomanD';
+  src: url('../fonts/RomanD.ttf');
+}
+
+@font-face{
+  font-family: 'Basicl';
+  src: url('../fonts/Basicl.ttf');
+}
+
+@font-face{
+  font-family: 'The Skinny';
+  src: url('../fonts/TheSkinny.otf');
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color:beige;
+	height:1500px;
+	overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+	width:10px;
+}
+
+::webkit-scrollbar-track {
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	background:rgba(204,204,204,0.8);
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background:rgba(204,204,204,0.4);
+}
+
+header.large {
+	position:fixed;
+	z-index:1200;
+	height:140px;
+	width:100%;
+}
+header.large img {
+	width:450px;
+	height:190px;
+	margin-left:455px;
+	margin-top:80px;
+	position:fixed;
+	z-index:10;
+}
+.burger{
+	width:1100px;
+	height:520px;
+	margin-left:130px;
+	margin-top:120px;
+	z-index:5;
+}
+header.small {
+	position:fixed;
+	z-index:1200;
+}
+
+header.small img {
+	width:257px;
+	height:100px;
+	margin-top:10px;
+	margin-left:80px;
+	z-index:1200;
+}
+
+nav.large {
+	position:fixed;
+	z-index:1200;
+	margin:auto;
+	width:1200px;
+	height:130px;	
+}
+
+nav.large ul {
+	float:right;
+	margin-top:40px;
+	margin-right:-130px;
+}
+
+nav.large ul li {
+	list-style-type:none;
+	float:left;
+	margin-right:40px;
+}
+
+nav.large ul li a {
+	color:#fff;
+	font-family:'Simplifica', sans-serif;
+	font-size:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+nav.small {
+	position:fixed;
+	z-index:1200;
+	margin:auto;
+	width:1200px;
+	height:130px;
+}
+
+nav.small ul {
+	float:right;
+	margin-top:20px;
+	margin-right:-140px;
+}
+
+nav.small ul li {
+	list-style-type:none;
+	float:left;
+	margin-right:40px;
+}
+
+nav.small ul li a {
+	color:#fff;
+	font-family:'Simplifica', sans-serif;
+	font-size:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+header,nav, a, img, li, ul, div{
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+}
+
+.tri-left {
+	width:0px;
+	height:0px;
+	border-right:1666px solid #780a25;
+	border-bottom:140px solid transparent;
+	position:absolute;
+	margin-left:-300px;
+	z-index:1000;
+	position:fixed;
+}
+
+.tri-right {
+	width:0px;
+	height:0px;
+	border-left:1666px solid #d01d55;
+	border-bottom:140px solid transparent;
+	z-index:999;
+	position:fixed;
+}
+
+.content {
+	width:1100px;
+	height:470px;
+	margin:auto;
+	top:180px;
+	position:relative;
+	border:1px solid black;
+	margin-bottom:50px;
+}
+
+div.small {
+	width:0px;
+	height:0px;
+	border-right:1666px solid #780a25;
+	border-bottom:100px solid transparent;
+	position:absolute;
+	margin-left:-300px;
+	z-index:1000;
+	position:fixed;
+}
+
+div.small2 {
+	width:0px;
+	height:0px;
+	border-left:1666px solid #d01d55;
+	border-bottom:100px solid transparent;
+	z-index:999;
+	position:fixed;
+}
+.grad1 {
+    height: 677px;
+	width: 1366px;
+	margin:0px;
+	padding:0px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(236,151,0,1),rgba(236,151,0,0)); 
+/* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(244,157,0,1),rgba(244,157,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(244,157,0,1),rgba(244,157,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(244,157,0,1),rgba(244,157,0,0)); /* Standard syntax (must be last) */
+}
+.lgo1{
+	width:33px;
+	height:33px;
+	margin-right:1px;
+	margin-left:-15px;
+}
+.lgo2{
+	width:30px;
+	height:30px;
+	margin-right:1px;
+	margin-left:-15px;
+}
+.lgo3{
+	width:27px;
+	height:27px;
+	margin-right:1px;
+	margin-left:-15px;
+}
+h3.get{
+	font-family:"impact";
+	font-size:70px;
+	color:#4f2017;
+}
+.crave{
+	font-family:"impact";
+	font-size:85px;
+	color:#d01d55;
+}
+.gwyc{
+	position:absolute;
+	top:500px;
+	left:370px;
+}
+
+.aboutus{
+	width:1366px;
+	height:677px;
+	position:absolute;
+	top:677px;
+	z-index:-1;
+	background-image:url('../img/about.png');
+}
+
+.heading_about {
+	margin-top:130px;
+	margin-left:100px;
+	position:absolute;
+	color:#fff;
+	font-family:'Sketch Block';
+	text-transform:uppercase;
+	font-size:100px;
+}
+
+.heading_menu {
+	position:absolute;
+	margin-top:70px;
+	margin-left:500px;
+	color:#fff;
+	font-family:'Sketch Block';
+	text-transform:uppercase;
+	font-size:100px;
+}
+
+.heading_contact {
+	position:absolute;
+	margin-top:45px;
+	margin-left:500px;
+	color:#ffcc00;
+	font-family:'Sketch Block';
+	text-transform:uppercase;
+	font-size:100px;
+}
+
+.descrip {
+	width:630px;
+	height:400px;
+	position:absolute;
+	margin-top:280px;
+	margin-left:100px;
+	text-indent:50px;
+	color:#fff;
+	font-family:'Please write me a song';
+	font-size:20px;
+	text-align:justify;
+	letter-spacing:1px;
+}
+
+.aboutb {
+	width:600px;
+	height:520px;
+	margin-top: 100px;
+	margin-right: 25px;
+	float: right;
+
+}
+
+.menu {
+	width:1366px;
+	height:677px;
+	position:absolute;
+	background-color:#780a25;
+	top:1354px;
+	margin:0px;
+	padding:0px;
+	z-index:-10;
+}
+
+.strp1 {
+	width:400px;
+	height:50px;
+	position:absolute;
+	top:120px;
+	left:850px;
+	background-image:url('../img/stripes1.png');
+}
+
+.strp2 {
+	width:400px;
+	height:50px;
+	position:absolute;
+	top:110px;
+	left:80px;
+	background-image:url('../img/stripes1.png');
+}
+
+.strp3 {
+	width:400px;
+	height:50px;
+	position:absolute;
+	top:80px;
+	left:80px;
+	background-image:url('../img/stripes1.png');
+}
+
+.hidden {
+	width:20px;
+	height:20px;
+	border:1px solid black;
+	position:absolute;
+}
+
+.contact1{
+	width:1366px;
+	height:677px;
+	position:absolute;
+	background-color:#382828;
+	top:2021px;
+	margin:0px;
+	padding:0px;
+}
+
+.contact2{
+	width:1256px;
+	height:605px;
+	position:absolute;
+	background-image:url('../img/backg.jpg');
+	top:2060px;
+	left:47px;
+	margin:0px;
+	padding:0px;
+	box-shadow:0 0 50px #111;
+}
+
+
+h4 {
+	padding: 10px 50px;
+	font-family: "Please Write Me A Song";
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top: 110px;
+	text-align:center;
+}
+form {
+	font-family: "Simplifica";
+	color: white;
+}
+
+.name {
+	position:absolute;
+	top: 150px;
+	margin-left: 50px;
+}
+
+.name2 {
+	overflow: hidden;
+	width: 280px;
+	top: 30px;
+	left: 200px;
+	position:absolute;
+}
+
+.number {
+	position: absolute;
+	top: 250px;
+	padding: 20px 50px;
+}
+
+.mail {
+	position: absolute;
+	top: 400px;
+	left: 100px;
+	padding: 20px 50px;
+}
+
+.message {
+	position: absolute;
+	top: 440px;
+	padding: 20px 50px;
+}
+label {
+	display: block;
+	padding-top: 30px;
+}
+.label-text1, .label-text2, .label-text3, .label-text4, .comment {
+	font-size: 20px;
+	letter-spacing: 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.label-text2 {
+	position: absolute;
+	top: 100px;}
+
+.comment {
+	position: relative;
+	top: 100px;
+	left: 100px;
+	}
+label .label-text1 {
+  color: white;
+  cursor: text;
+  transform: translateY(-34px);
+  transition: all 0.3s;
+  position: relative;
+  top: 6px;
+  left: 10px;
+  text-align: center;
+ }
+label .label-text2 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 75px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+} 
+label .label-text3 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 30px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+}
+label .label-text4 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 32px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+}
+label .comment {
+	position: relative;
+	top: -48px;
+	left: 240px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+}
+textarea {
+	cursor: text;
+	float: left;
+	position: relative;
+	resize: none;
+	top: -100px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #4A4A4A;
+	font-family: "Simplifica";
+	font-size: 20px;
+	color: white;
+	letter-spacing: 2px;
+	width: 584px;
+	height: 120px;
+	
+}
+textarea:focus {
+	outline: none;
+	border: 1px solid #ffcc00;
+	transition: all 0.3s;	
+	}
+input {
+	font-family: "Simplifica";
+}
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #4A4A4A;
+  color: white;
+  font-family: "Simplifica";
+  font-size: 24px;
+  letter-spacing: 2px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 240px;
+}
+label input:focus {
+	border: 1px solid #ffcc00;
+	transition: all 0.3s;
+}
+label input:focus + .label-text1, label input:focus + .label-text2, label input:focus + .label-text3, label input:focus + .label-text4 {
+  color: white;
+  font-size: 20px;
+  transform: translateY(10px);
+}
+label input:focus + .comment {
+	transition: all 0.3s;
+	transform: translateY(10px);
+	color: white;
+}
+
+label input.value-exists + .label-text1 {
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+.button1 {
+	position: absolute;
+	top: 540px;
+	left: 290px;
+	font-size: 36px;
+}
+.button2 {
+	position: absolute;
+	top: 540px;
+	left: 360px;
+	font-size: 36px;
+}
+
+
+.map {
+	width:450px;
+	height:250px;
+	position:absolute;
+	margin-top:80px;
+	right:30px;
+	border:1px solid #fff;
+	background-image:url('../img/map1.png');
+	box-shadow:0 20px 12px -12px #000;
+}
+
+.talk {
+	width:460px;
+	height:100px;
+	position:absolute;
+	margin-top:345px;
+	right:30px;
+}
+
+.talk h3 {
+	margin:0;
+	padding:0;
+	font-family:'The Skinny';
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	letter-spacing:5px;
+}
+
+.talk p{
+	margin:0;
+	padding:10px;
+	font-family:'RomanD';
+	font-size:15px;
+	color:#fff;
+	text-align:justify;
+}
+
+.sns {
+	font-family:'RomanD';
+	font-size:15px;
+	color:#fff;
+}
+
+.sns a {
+	color:#ffcc00;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:'Basicl';
+	margin-left:40px;
+	margin-right:40px;
+}
+
+.num {
+	font-family:'RomanD';
+	font-size:15px;
+	color:#ffcc00;
+	font-weight:bold;
+}
+
+.footer1 {
+	height:50px;
+	width:100%;
+	margin-top:2021px;
+	background-color:#d01d55;
+	position:absolute;
+}
+
+.footer2 {
+	height:30px;
+	width:100%;
+	margin-top:2071px;
+	background-color:#780a25;
+	position:absolute;
+}
+
+.f1, .f2 {
+	line-height:30px;
+	color:#eee;
+	font-family:'RomanD';
+	font-size:12px;
+}
+
+.f1 {
+	text-transform:uppercase;
+	margin-left:50px;
+}
+
+.f2 {
+	float:right;
+	margin-right:130px;
+}
+
+.f2 a {
+	color:#aaa;
+	text-decoration:none;
+}
+
+.f2 a:hover {
+	color:#fff;
+	font-weight:bold;
+}
+
+
+
+/*back-to-top */
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-image:url('../img/arrow1.jpg');
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  border-radius:5px 5px 0px 0px;
+  -webkit-border-radius:5px 5px 0px 0px;
+  -moz-border-radius:5px 5px 0px 0px;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+/*end*/
+
+/*form-css*/
+
+h4 {
+	padding: 10px 50px;
+	font-family: "Please Write Me A Song";
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top: 110px;
+	text-align:center;
+}
+form {
+	font-family: "Simplifica";
+	color: white;
+}
+
+.name {
+	position:absolute;
+	top: 150px;
+	margin-left: 50px;
+}
+
+.name2 {
+	position: relative;
+	top: -122px;
+	left: 360px;
+}
+
+.number {
+	position: absolute;
+	top: 250px;
+	padding: 20px 50px;
+}
+
+.mail {
+	position: relative;
+	top: -109px;
+	left: 310px;
+	padding: 20px 50px;
+}
+
+.message {
+	position: absolute;
+	top: 440px;
+	padding: 20px 50px;
+}
+label {
+	display: block;
+	padding-top: 30px;
+}
+.label-text1, .label-text2, .label-text3, .label-text4, .comment {
+	font-size: 20px;
+	letter-spacing: 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.comment {
+	position: relative;
+	top: 10px;
+	left: 100px;
+	}
+label .label-text1 {
+  color: white;
+  cursor: text;
+  transform: translateY(-34px);
+  transition: all 0.3s;
+  position: relative;
+  top: 6px;
+  left: 10px;
+  text-align: center;
+ }
+label .label-text2 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 75px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+} 
+label .label-text3 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 30px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+}
+label .label-text4 {
+	position: relative;
+	cursor: text;
+	top: 6px;
+	left: 32px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+  
+}
+label .comment {
+	position: relative;
+	top: -48px;
+	left: 136px;
+	transform: translateY(-34px);
+	transition: all 0.3s;
+}
+textarea {
+	cursor: text;
+	float: left;
+	position: relative;
+	resize: none;
+	top: -100px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #4A4A4A;
+	font-family: "Simplifica";
+	font-size: 20px;
+	color: white;
+	letter-spacing: 2px;
+	width: 584px;
+	height: 120px;
+	
+}
+textarea:focus {
+	outline: none;
+	border: 1px solid #ffcc00;
+	transition: all 0.3s;	
+	}
+input {
+	font-family: "Simplifica";
+}
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #4A4A4A;
+  color: white;
+  font-family: "Simplifica";
+  font-size: 24px;
+  letter-spacing: 2px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 240px;
+}
+label input:focus {
+	border: 1px solid #ffcc00;
+	transition: all 0.3s;
+}
+label input:focus + .label-text1, label input:focus + .label-text2, label input:focus + .label-text3, label input:focus + .label-text4 {
+  color: white;
+  font-size: 20px;
+  transform: translateY(10px);
+}
+label input:focus + .comment {
+	transition: all 0.3s;
+	transform: translateY(10px);
+	color: white;
+}
+
+label input.value-exists + .label-text1 {
+  font-size: 13px;
+  transform: translateY(-74px);
+}
+
+.button1, .button2 {
+	position: absolute;
+	top: 400px;
+	font-size: 36px;
+}
+
+/*end*/
